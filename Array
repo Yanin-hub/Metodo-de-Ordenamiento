@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.metododeordenamiento;
+import java.util.Scanner;
+/**
+ *
+ * @author Equipo
+ */
+public class MetododeOrdenamiento {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        //1. solicitar el tamaño del arreglo
+        System.out.print("ingresa la cantidad de numeros del arreglo: ");
+        int magnitud = teclado.nextInt();
+        
+        int[] numero = new int[magnitud];
+        
+        // 2. Llenar el arreglo con numeros ingresados por el usuarios
+        for (int i = 0; i < magnitud; i++) {
+            System.out.print ("Ingresa un numero: ");
+            numero [i] = teclado.nextInt();
+        }
+        
+        // 3. Ordenar el arreglo usando el metodo de burbuja
+        for (int i = 0; i < magnitud - 1; i++) {
+            for (int n = 0; n < magnitud - 1 - i; n++) {
+                if (numero [n]> numero [n+1]){
+                    // 4. Ordenar elementos 
+                    int temp = numero [n];
+                    numero [n] = numero [n+1];
+                    numero [n+1] = temp;
+                }
+            }
+        }
+        // 5. Mostrar el arreglo
+        System.out.println ("Arreglo en orden ascendente: ");
+        for (int num : numero) { 
+            System.out.print (num + " ");
+            
+        }}}
