@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.numerospareseinpares;
+import java.util.Scanner;
+/**
+ *
+ * @author Equipo
+ */
+public class Numerospareseinpares {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        
+        int[] numero = new int [10];
+        int Npares = 0, Nimpares = 0;
+        
+        for (int i=0; i<10; i++) {    
+            System.out.print ("Ingresar un numero entero; ");
+            numero [i] = teclado.nextInt ();
+            
+            if (numero [i] % 2 == 0) {
+                Npares++;
+            } else {
+                Nimpares++;
+            }
+        }
+        System.out.print ("Total de Numeros pares: "   + Npares);
+        
+        System.out.println("Total de Numeros Inpares: "  + Nimpares);
+    }}
