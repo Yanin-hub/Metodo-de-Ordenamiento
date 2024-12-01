@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mayorymenor;
+import java.util.Scanner;
+/**
+ *
+ * @author Equipo
+ */
+public class Mayorymenor {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+   
+        int[] numero = new int[8];
+        int Mayor, Menor;
+        
+        System.out.print("Ingrese un numero entero: ");
+        numero[0] = teclado.nextInt();
+        Mayor = Menor = numero[0];
+        
+        for (int i=1; i < 8; i++) {
+            System.out.print("Ingresar numero entero: ");
+            numero[i] = teclado.nextInt();
+            if (numero[i] > Mayor) {
+                Mayor = numero[i];
+            }
+            if (numero[i] < Menor) {
+                Menor = numero[i];
+            }
+        }
+        
+System.out.println("Numero Mayor es: " + Mayor);
+System.out.println("Numero Menor es: " + Menor);
+}}
+     
