@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.invertirelementos;
+import java.util.Scanner;
+/**
+ *
+ * @author Equipo
+ */
+public class InvertirElementos {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+        
+        int[] numero = new int[6];
+        
+        for (int i=0; i<6; i++){
+            System .out.print("Ingresar un numero entero: ");
+            numero[i] = teclado.nextInt();
+        }
+    System.out.print("Arreglo invertido: " );
+    for (int i=5; i>0; i--) {
+   System.out.print(numero[i] + " ");
+   
+}
+}}
